@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .bluebtn{
+        background-color: blue;
+        color: white;
+        border: none;
+    }
+    .addcart{
+        background-color: yellow;
+        color: black;
+        border: none;
+    }
+    .buynow{
+        background-color: orange;
+        color: white;
+        border: none;
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <button  class="bluebtn" onclick="
+    alert('Nice job!');
+    ">Click me!</button>
+
+  <div>
+    <button class="addcart" onclick="alert('Item added to cart!')">Add to cart</button>
+    <button class="buynow" onclick="alert('Loading payment...');
+      console.log('Item purchased')">Buy now</button>
+  </div>
+</body>
+</html>
