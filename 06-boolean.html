@@ -5,39 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Booleans</title>
 </head>
-<body>
-  <script>
-   /* console.log(typeof true);
-    false
+  <body>
+    <script>
+    /* console.log(typeof true);
+      false
 
-    console.log(3 < 6);
-    console.log(5 == '5.00');
-    console.log(5 === '5.00');
+      console.log(3 < 6);
+      console.log(5 == '5.00');
+      console.log(5 === '5.00');
 
-    if(false) {
-      console.log('Hello')
-    } else {
-      console.log('else');
+      if(false) {
+        console.log('Hello')
+      } else {
+        console.log('else');
+      }
+
+
+      const age = 15;
+      if ( age >= 16) {
+        console.log('you can drive');
+      } else if(age >= 14) {
+        console.log('almost there');
+      }
+        else {
+        console.log('you cannot drive');
+      }
+  */
+  // logical operators
+    /*console.log(true && true);
+    console.log(0.3 >= 0 && 0.3 <= 0.5);
+
+    console.log(true || false);
+    console.log(!true);
+    */
+
+    /*if (5){
+        console.log('truthy');
     }
 
+    const cartQuantity = 5;
 
-    const age = 15;
-    if ( age >= 16) {
-      console.log('you can drive');
-    } else if(age >= 14) {
-      console.log('almost there');
+    if (cartQuantity){
+      console.log('cart has products');
     }
-      else {
-      console.log('you cannot drive');
-    }
-*/
-// logical operators
-  console.log(true && true);
-  console.log(0.3 >= 0 && 0.3 <= 0.5);
 
-  console.log(true || false);
-  console.log(!true);
-  </script>
-  
-</body>
+    console.log(!0); // !flips the value of 0 to true 
+    */
+      // ternary operator
+    const result = 0 ? 'truthy' : 'falsy';
+    console.log(result); // this is same as if (0) {console.log('truthy')} else {console.log('falsy')}
+
+      // guard operator
+    0 && console.log('hello');
+    false && console.log('hello'); // this is same as if (0) {console.log('hello')} else {console.log('')}
+
+    const message = false && 'hello';
+    console.log(message);
+
+    const student =  true &&  'Welcome';
+    console.log(student);
+
+
+    const currency = 'EURO' || 'USD';
+    console.log(currency);
+
+
+
+    </script>
+  </body>
 </html>
